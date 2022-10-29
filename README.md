@@ -10,3 +10,4 @@ Technologies used to build this application:
 - Node.js
 - Express
 - MongoDB
+- Material UI
