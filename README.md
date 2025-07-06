@@ -1,19 +1,19 @@
-# Gaming Moments
+# MediaMesh
 
-A full-stack social media application for gamers to share their epic gaming moments! Built with the MERN stack (MongoDB, Express.js, React, Node.js), Gaming Moments allows users to create, like, comment on, and search for gaming-related posts.
+A full-stack social media platform for sharing and discovering visual content! Built with the MERN stack (MongoDB, Express.js, React, Node.js), MediaMesh allows users to create, like, comment on, and search for image-based posts with real-time social interactions.
 
-## 🎮 Features
+## 🚀 Features
 
 - **User Authentication**: Secure login/signup with JWT tokens and Google OAuth
-- **Post Management**: Create, edit, and delete gaming moment posts
+- **Content Management**: Create, edit, and delete image-based posts
 - **Social Interactions**: Like and comment on posts from other users
 - **Search Functionality**: Search posts by title, tags, or content
-- **Tagging System**: Tag posts with relevant gaming keywords
+- **Tagging System**: Tag posts with relevant keywords for discovery
 - **Real-time Updates**: Live updates for likes and comments
 - **Responsive Design**: Optimized for desktop and mobile devices
 - **Pagination**: Efficient loading of posts with pagination
 - **User Profiles**: View posts from specific users
-- **Image Uploads**: Share screenshots and images with posts
+- **Image Uploads**: Share high-quality images with posts
 
 ## 🛠️ Tech Stack
 
@@ -51,8 +51,8 @@ A full-stack social media application for gamers to share their epic gaming mome
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/LoganHosoda/gaming-moments.git
-   cd gaming-moments
+   git clone https://github.com/LoganHosoda/mediamesh.git
+   cd mediamesh
    ```
 
 2. **Install server dependencies**
@@ -77,9 +77,9 @@ PORT=5000
 NODE_ENV=development
 
 # Database
-MONGODB_URI=mongodb://localhost:27017/gaming-moments
+MONGODB_URI=mongodb://localhost:27017/mediamesh
 # or for MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/gaming-moments
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/mediamesh
 
 # JWT
 JWT_SECRET=your-super-secret-jwt-key-here
@@ -133,7 +133,7 @@ The application will be available at:
 ## 📁 Project Structure
 
 ```
-gaming-moments/
+mediamesh/
 ├── client/                   # React frontend
 │   ├── public/
 │   │   └── index.html       # Main HTML file
@@ -175,8 +175,8 @@ gaming-moments/
 - **Protected Routes**: Middleware for route protection
 - **Auto-login**: Persistent login state
 
-### Post Management
-- **Create**: Add new gaming moments with images
+### Content Management
+- **Create**: Add new image-based posts with descriptions
 - **Edit**: Update your existing posts
 - **Delete**: Remove posts you've created
 - **Like**: Like/unlike posts from other users
@@ -184,7 +184,7 @@ gaming-moments/
 
 ### Search & Discovery
 - **Search Bar**: Search posts by title, content, or tags
-- **Tags**: Filter posts by gaming categories
+- **Tags**: Filter posts by relevant categories
 - **Pagination**: Load more posts as you scroll
 - **User Posts**: View posts from specific users
 
@@ -289,4 +289,4 @@ This project is licensed under the UNLICENSED License - see the package.json fil
 
 ---
 
-🎮 **Happy Gaming!** Share your most epic gaming moments!
+🌐 **Happy Sharing!** Connect and share your visual stories with MediaMesh!

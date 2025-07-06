@@ -56,7 +56,7 @@ const Home = () => {
               <TextField 
                 name="search" 
                 variant="outlined" 
-                label="Search EPIC Moments"
+                label="Search Posts"
                 onKeyPress={handleKeyPress}
                 fullWidth
                 value={search}

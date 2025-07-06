@@ -1,11 +1,17 @@
 {
-  "name": "server",
+  "name": "mediamesh-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend server for MediaMesh social media platform",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "cd ../client && npm run build",
+    "install-client": "cd ../client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "render-build": "npm run install-client && npm run build",
+    "render-start": "npm start"
   },
   "keywords": [],
   "author": "",

@@ -5,8 +5,7 @@ import { useDispatch } from 'react-redux';
 import decode from 'jwt-decode';
 
 import useStyles from './styles';
-import logoText from '../../images/gaming_moments.png';
-import logoImage from '../../images/controller_logo.png';
+import MediaMeshLogo from '../MediaMeshLogo';
 
 const Navbar = () => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
@@ -30,8 +29,7 @@ const Navbar = () => {
     return(
         <AppBar className={classes.appBar} position="static" color="inherit">
             <Link to="/" className={classes.brandContainer}>
-                <img src={logoText} alt="icon" height="35px" />
-                <img className={classes.image} src={logoImage} alt="memories" height="60" />
+                <MediaMeshLogo width="180" height="45" />
             </Link>
             <Toolbar className={classes.toolbar}>
                 {user ? (
