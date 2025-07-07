@@ -7,10 +7,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "cd ../client && npm run build",
-    "install-client": "cd ../client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "render-build": "npm run install-client && npm run build",
+    "build": "npm i --legacy-peer-deps && npm i --legacy-peer-deps --prefix ../client && npm run build --prefix ../client",
+    "render-build": "npm run install && npm run build",
     "render-start": "npm start"
   },
   "keywords": [],
